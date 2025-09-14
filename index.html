@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js
+"></script>
+    <style>
+      .rounded-img {
+        width: 60%;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgb(0, 0, 0, 0.4);
+        padding: 0.6em;
+        margin-bottom: 1em;
+      }
+      .line {
+        width: auto;
+        border-top: 2px solid #000;
+        margin: 20px 0;
+      }
+      .fix {
+        margin: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-lg-5 mx-auto">
+          <img class="rounded-img" src="image.png" alt="This" />
+          <h1 class="fw-light">Links</h1>
+          <p class="lead fs-5 text-muted">
+            Cheer up, the worst is yet to come. . .
+          </p>
+          <a href="http://kubsu.ru" target="_blank" class="btn btn-primary fix"
+            >HTTP Кубгу</a
+          >
+          <a href="https://kubsu.ru" target="_blank" class="btn btn-primary fix"
+            >HTTPS Кубгу</a
+          >
+          <a href="about.html" target="_blank" class="btn btn-primary fix"
+            >/short-link about</a
+          >
+          <a href="index.html" target="_blank" class="btn btn-secondary fix"
+            >/short-link main</a
+          >
+          <a href="#section1" target="_blank" class="btn btn-secondary fix"
+            >Отрывок второй сказки</a
+          >
+          <a
+            href="https://randomsite.com/page?param1=50&param2=40&param3=70"
+            target="_blank"
+            class="btn btn-secondary fix"
+            >link with 3parametrs</a
+          >
+          <a
+            href="https://randomsite.com/page?id=123"
+            target="_blank"
+            class="btn btn-secondary fix"
+            >link with id-param</a
+          >
+          <a href="./index.html" target="_blank" class="btn btn-secondary fix"
+            >Относительная ссылка в текущем каталоге main</a
+          >
+          <a href="./about" target="_blank" class="btn btn-secondary fix"
+            >Относительная ссылка about</a
+          >
+          <a href="../baobab" target="_blank" class="btn btn-secondary fix"
+            >Относительная ссылка 1lvl-up baobab</a
+          >
+          <a href=".../aboab" target="_blank" class="btn btn-secondary fix"
+            >Относительная ссылка 2lvl-up aboab</a
+          >
+          <a
+            href="https://randomsite.com/index.html#section2"
+            target="_blank"
+            class="btn btn-secondary fix"
+            >Фрагмент стороннего сайта</a
+          >
+          <a href="" target="_blank" class="btn btn-secondary fix"
+            >Empty link</a
+          >
+          <a class="btn btn-secondary fix">noHref link</a>
+          <a
+            href=""
+            target="_blank"
+            rel="nofollow"
+            class="btn btn-secondary fix"
+            >Ссылка без перехода для поисковиков</a
+          >
+          <a
+            href=""
+            target="_blank"
+            rel="nofollow"
+            class="btn btn-secondary fix"
+            >Ссылка, запрещенная для индексации поисковиками</a
+          >
+          <ol>
+            <li>
+              <a
+                href="http://example.com/page1"
+                class="btn btn-secondary fix"
+                title="Первая страница"
+                >Ссылка 1</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://example.com/page2"
+                class="btn btn-secondary fix"
+                title="Вторая страница"
+                >Ссылка 2</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://example.com/page3"
+                class="btn btn-secondary fix"
+                title="Третья страница"
+                >Ссылка 3</a
+              >
+            </li>
+          </ol>
+          <a
+            href="ftp://username:password@ftp.example.com/path/to/file.txt"
+            class="btn btn-secondary fix"
+            >Скачать файл</a
+          >
+        </div>
+      </div>
+      <img src="kek.png" alt="Пример карты" width="300" usemap="#example-map" />
+      <map name="example-map">
+        <area
+          shape="rect"
+          coords="10,10,100,100"
+          href="https://example.com/rect"
+          alt="Прямоугольник"
+        />
+      </map>
+      <div class="line"></div>
+      <div>
+        <h1 id="section1">Sleeping beauty</h1>
+        <p>
+          One day, a <a href="./info_king" title="aboba">good King</a> and his
+          beautiful Queen have a baby. They are very happy. «Let’s have a
+          party,» says the King. The King and Queen invite their friends to the
+          party. They also invite seven good fairies. Today is the party!
+          Everybody gives a present to the baby princess. The fairies also give
+          presents. Their presents are very special. «You will be beautiful,»
+          says the first fairy. «You will be clever,» says the second fairy.
+          «You will be kind,» says the third fairy. «You will sing,» says the
+          fourth fairy. «You will dance,» says the fifth fairy. «You will always
+          be happy,» says the sixth fairy. Suddenly, somebody knocks on the
+          palace door...
+        </p>
+        <h2 id="section1">Secondary</h2>
+        <p>
+          Little Red Riding Hood goes into the forest. She sees a wolf! She
+          isn’t afraid of him and she talks to him. «Hello!» she says. «Good
+          morning,» says the wolf. «What’s your name?» «Little Red Riding Hood.
+          I’m going to Grandmother’s house,» she says. «What’s in your basket?»
+          asks the wolf «Some bred and jam. Grandmother is ill,» says Little Red
+          Riding Hood. «Where does Grandmother live?» asks the wolf. «She lives
+          in a small house in the forest,» says Little Red Riding Hood. «Little
+          Red Riding Hood looks nice. I want to eat her and Grandmother,» the
+          wolf thinks. «I am fast. I can run. I know what I can do…» The wolf
+          runs to Grandmother’s house. He runs very quickly. He wants to eat
+          Grandmother. The wolf knocks on Grandmother’s door. . .
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
