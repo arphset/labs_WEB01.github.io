@@ -26,6 +26,24 @@
       .fix {
         margin: 4px;
       }
+      select[multiple] {
+        width: 100px;
+        height: 120px;
+        padding-right: 30px;
+        font-size: 14px;
+        margin: 30px;
+      }
+
+      textarea {
+        width: 100%;
+        max-width: 450px;
+        height: 120px;
+        padding: 10px;
+        font-size: 14px;
+        resize: vertical; /* позволяет менять высоту, но не ширину */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
     </style>
   </head>
   <body>
@@ -37,100 +55,146 @@
           <p class="lead fs-5 text-muted">
             Cheer up, the worst is yet to come. . .
           </p>
-          <a href="http://kubsu.ru" target="_blank" class="btn btn-primary fix"
-            >HTTP Кубгу</a
-          >
-          <a href="https://kubsu.ru" target="_blank" class="btn btn-primary fix"
-            >HTTPS Кубгу</a
-          >
-          <a href="about.html" target="_blank" class="btn btn-primary fix"
-            >/short-link about</a
-          >
-          <a href="index.html" target="_blank" class="btn btn-secondary fix"
-            >/short-link main</a
-          >
-          <a href="#section1" target="_blank" class="btn btn-secondary fix"
-            >Отрывок сказки</a
-          >
-          <a
-            href="https://randomsite.com/page?param1=50&param2=40&param3=70"
-            target="_blank"
-            class="btn btn-secondary fix"
-            >link with 3parametrs</a
-          >
-          <a
-            href="https://randomsite.com/page?id=123"
-            target="_blank"
-            class="btn btn-secondary fix"
-            >link with id-param</a
-          >
-          <a href="./index.html" target="_blank" class="btn btn-secondary fix"
-            >Относительная ссылка в текущем каталоге main</a
-          >
-          <a href="./about" target="_blank" class="btn btn-secondary fix"
-            >Относительная ссылка about</a
-          >
-          <a href="../baobab" target="_blank" class="btn btn-secondary fix"
-            >Относительная ссылка 1lvl-up baobab</a
-          >
-          <a href=".../aboab" target="_blank" class="btn btn-secondary fix"
-            >Относительная ссылка 2lvl-up aboab</a
-          >
-          <a
-            href="https://randomsite.com/index.html#section2"
-            target="_blank"
-            class="btn btn-secondary fix"
-            >Фрагмент стороннего сайта</a
-          >
-          <a href="" target="_blank" class="btn btn-secondary fix"
-            >Empty link</a
-          >
-          <a class="btn btn-secondary fix">noHref link</a>
-          <a
-            href=""
-            target="_blank"
-            rel="nofollow"
-            class="btn btn-secondary fix"
-            >Ссылка без перехода для поисковиков</a
-          >
-          <a
-            href=""
-            target="_blank"
-            rel="nofollow"
-            class="btn btn-secondary fix"
-            >Ссылка, запрещенная для индексации поисковиками</a
-          >
-          <ol>
+          <ul>
             <li>
               <a
-                href="http://example.com/page1"
-                class="btn btn-secondary fix"
-                title="Первая страница"
-                >Ссылка 1</a
+                href="http://kubsu.ru"
+                target="_blank"
+                class="btn btn-primary fix"
+                >HTTP Кубгу</a
               >
             </li>
             <li>
               <a
-                href="http://example.com/page2"
-                class="btn btn-secondary fix"
-                title="Вторая страница"
-                >Ссылка 2</a
+                href="https://kubsu.ru"
+                target="_blank"
+                class="btn btn-primary fix"
+                >HTTPS Кубгу</a
+              >
+            </li>
+            <li>
+              <a href="about.html" target="_blank" class="btn btn-primary fix"
+                >/short-link about</a
+              >
+            </li>
+            <li>
+              <a href="index.html" target="_blank" class="btn btn-secondary fix"
+                >/short-link main</a
+              >
+            </li>
+            <li>
+              <a href="#section1" target="_blank" class="btn btn-secondary fix"
+                >Отрывок сказки</a
               >
             </li>
             <li>
               <a
-                href="http://example.com/page3"
+                href="https://randomsite.com/page?param1=50&param2=40&param3=70"
+                target="_blank"
                 class="btn btn-secondary fix"
-                title="Третья страница"
-                >Ссылка 3</a
+                >link with 3parametrs</a
               >
             </li>
-          </ol>
-          <a
-            href="ftp://username:password@ftp.example.com/path/to/file.txt"
-            class="btn btn-secondary fix"
-            >Скачать файл</a
-          >
+            <li>
+              <a
+                href="https://randomsite.com/page?id=123"
+                target="_blank"
+                class="btn btn-secondary fix"
+                >link with id-param</a
+              >
+            </li>
+            <li>
+              <a
+                href="./index.html"
+                target="_blank"
+                class="btn btn-secondary fix"
+                >Относительная ссылка в текущем каталоге main</a
+              >
+            </li>
+            <li>
+              <a href="./about" target="_blank" class="btn btn-secondary fix"
+                >Относительная ссылка about</a
+              >
+            </li>
+            <li>
+              <a href="../baobab" target="_blank" class="btn btn-secondary fix"
+                >Относительная ссылка 1lvl-up baobab</a
+              >
+            </li>
+            <li>
+              <a href=".../aboab" target="_blank" class="btn btn-secondary fix"
+                >Относительная ссылка 2lvl-up aboab</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://randomsite.com/index.html#section2"
+                target="_blank"
+                class="btn btn-secondary fix"
+                >Фрагмент стороннего сайта</a
+              >
+            </li>
+            <li>
+              <a href="" target="_blank" class="btn btn-secondary fix"
+                >Empty link</a
+              >
+            </li>
+            <li><a class="btn btn-secondary fix">noHref link</a></li>
+            <li>
+              <a
+                href=""
+                target="_blank"
+                rel="nofollow"
+                class="btn btn-secondary fix"
+                >Ссылка без перехода для поисковиков</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                target="_blank"
+                rel="nofollow"
+                class="btn btn-secondary fix"
+                >Ссылка, запрещенная для индексации поисковиками</a
+              >
+            </li>
+            <li>
+              <ol>
+                <li>
+                  <a
+                    href="http://example.com/page1"
+                    class="btn btn-secondary fix"
+                    title="Первая страница"
+                    >Ссылка 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://example.com/page2"
+                    class="btn btn-secondary fix"
+                    title="Вторая страница"
+                    >Ссылка 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://example.com/page3"
+                    class="btn btn-secondary fix"
+                    title="Третья страница"
+                    >Ссылка 3</a
+                  >
+                </li>
+              </ol>
+            </li>
+
+            <li>
+              <a
+                href="ftp://username:password@ftp.example.com/path/to/file.txt"
+                class="btn btn-secondary fix"
+                >Скачать файл</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
       <img src="kek.png" alt="Пример карты" width="300" usemap="#example-map" />
@@ -141,7 +205,87 @@
           href="https://example.com/rect"
           alt="Прямоугольник"
         />
+        <area
+          shape="circle"
+          coords="250,40,50"
+          href="https://example.com/circle"
+          alt="Круглая область"
+        />
       </map>
+      <form action="/" method="POST">
+        <label>
+          ФИО:
+          <input type="text" name="fio" required /> </label
+        ><br />
+
+        <label>
+          Телефон:
+          <input
+            type="tel"
+            name="phone"
+            placeholder="+7 (___) ___-____"
+            required
+          /> </label
+        ><br />
+
+        <label>
+          e-mail:
+          <input
+            type="email"
+            name="email"
+            placeholder="example@mail.com"
+            required
+          /> </label
+        ><br />
+
+        <label>
+          Дата рождения:
+          <input type="date" name="birthdate" required /> </label
+        ><br />
+
+        Пол:<br />
+        <label
+          ><input type="radio" name="gender" value="male" required />
+          Мужской</label
+        ><br />
+        <label
+          ><input type="radio" name="gender" value="female" /> Женский</label
+        ><br />
+
+        <label>
+          <select name="languages[]" multiple size="5" required>
+            <option value="Pascal">Pascal</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="PHP">PHP</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="Haskel">Haskel</option>
+            <option value="Clojure">Clojure</option>
+            <option value="Prolog">Prolog</option>
+            <option value="Scala">Scala</option>
+          </select> </label
+        ><br />
+
+        <label>
+          Биография:
+          <textarea
+            name="biography"
+            rows="2"
+            cols="20"
+            placeholder="Расскажите о себе"
+          ></textarea></label
+        ><br />
+
+        <label>
+          <input type="checkbox" name="contract" required /> С контрактом
+          ознакомлен(а) </label
+        ><br />
+
+        <button type="submit">Сохранить</button>
+      </form>
+
       <div class="line"></div>
       <div>
         <h1 id="section1">Sleeping beauty</h1>
@@ -174,5 +318,77 @@
         </p>
       </div>
     </div>
+    <form action="/" method="POST">
+      <label>
+        ФИО:
+        <input type="text" name="fio" required /> </label
+      ><br />
+
+      <label>
+        Телефон:
+        <input
+          type="tel"
+          name="phone"
+          placeholder="+7 (___) ___-____"
+          required
+        /> </label
+      ><br />
+
+      <label>
+        e-mail:
+        <input
+          type="email"
+          name="email"
+          placeholder="example@mail.com"
+          required
+        /> </label
+      ><br />
+
+      <label>
+        Дата рождения:
+        <input type="date" name="birthdate" required /> </label
+      ><br />
+
+      Пол:<br />
+      <label
+        ><input type="radio" name="gender" value="male" required />
+        Мужской</label
+      ><br />
+      <label><input type="radio" name="gender" value="female" /> Женский</label
+      ><br />
+
+      <label>
+        <select name="languages[]" multiple size="5" required>
+          <option value="Pascal">Pascal</option>
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="PHP">PHP</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="Haskel">Haskel</option>
+          <option value="Clojure">Clojure</option>
+          <option value="Prolog">Prolog</option>
+          <option value="Scala">Scala</option>
+        </select> </label
+      ><br />
+
+      <label>
+        Биография:
+        <textarea
+          name="biography"
+          rows="4"
+          cols="40"
+          placeholder="Расскажите о себе"
+        ></textarea></label
+      ><br />
+
+      <label>
+        <input type="checkbox" name="contract" required /> С контрактом
+        ознакомлен(а) </label
+      ><br />
+
+      <button type="submit">Сохранить</button>
+    </form>
   </body>
 </html>
